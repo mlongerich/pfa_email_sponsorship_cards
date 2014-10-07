@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<style>
+#outside {
+	width: 800px;
+	height: 550px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #ffffff;
+	position:static;
+}
+
+#left {
+	border-radius: 10px 0px 0px 10px;
+	-moz-border-radius: 10px 0px 0px 10px;
+	-webkit-border-radius: 10px 0px 0px 10px;
+	border: 0px solid #ffffff;
+	height: 1090px;
+	width:10px;
+	background-color:#d66611;
+	float:left;
+	position:static;
+}
+
+#right {
+	width: 750px;
+	height: 100px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #ffffff;
+	float: left;
+	position: static;
+}
+
+#top {
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border: 0px solid #ffffff;
+	width:750px;
+	height:70px;
+	background-color:#000000;
+	position: static;
+}
+
+#middle {
+	width:749px;
+	height:auto;
+	clear:both;
+	top:20px;
+	position:relative;
+}
+
+#bottom {
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border: 10px solid #92e5eb;
+	background-color: #d66611;
+	width:730px;
+	height:auto;
+	position:static;
+	display:table;
+	border-spacing:15px;
+}
+
+#inside {
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #ffffff;
+	width:680px;
+	height:auto;
+	background-color:#ffffff;
+	padding: 10px;
+	dispay:table-cell;
+}
+
+#inside-left {
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #ffffff;
+	width:320px;
+	height:auto;
+	background-color:#ffffff;
+	padding: 10px;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+#inside-right {
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #ffffff;
+	width:320px;
+	height:auto;
+	background-color:#ffffff;
+	padding: 10px;
+	display: table-cell;
+}
+
+#white{
+	color:white;
+	position: relative;
+	left:70px;
+}
+
+#number{
+	height: 50px;
+	position:absolute;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 1px solid #000000;
+	top:10px;
+	right:10px;
+	width:40px;
+	padding-left:20px;
+}
+#sponsorship{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-box-shadow: inset 0px 1px 0px 0px #eab288;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #eab288;
+	box-shadow: inset 0px 1px 0px 0px #eab288;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e08c4c), color-stop(1, #d66611) );
+	background: -moz-linear-gradient( center top, #e08c4c 5%, #d66611 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e08c4c', endColorstr='#d66611');
+	background-color: #e08c4c;
+	-webkit-border-top-left-radius: 42px;
+	-moz-border-radius-topleft: 42px;
+	border-top-left-radius: 42px;
+	-webkit-border-top-right-radius: 42px;
+	-moz-border-radius-topright: 42px;	border-top-right-radius: 42px;
+	-webkit-border-bottom-right-radius: 42px;
+	-moz-border-radius-bottomright: 42px;
+	border-bottom-right-radius: 42px;
+	-webkit-border-bottom-left-radius: 42px;
+	-moz-border-radius-bottomleft: 42px;
+	border-bottom-left-radius: 42px;
+	text-indent: 0px;
+	border: 1px solid #a04c0c;
+	display: table;
+	color: #ffffff;
+	height: 30px;
+	width: 250px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px #6b3308;
+	margin: 0 auto;
+}
+
+#kid-bottom {
+	border: 10px solid #92e5eb;
+	background-color: #d66611;
+	width:730px;
+	height:auto;
+	position:static;
+	display:table;
+	border-spacing:15px;
+}
+#box{
+	height:30px;
+	width: 40px;
+	left:20px;
+	top:15px;
+	position:relative;
+}
+#b1, #b3, #b5{
+	width:40px;
+	height: 6px;
+	background-color:#d66611;
+}
+#b2, #b4{
+	width 40px;
+	height: 6px;
+}
+#logo-img{
+	max-width:25%;
+	max-height:80%;
+	float:right;
+	position:relative;
+	bottom:40px;
+	right:10px;
+}
+#Jer{
+	position:relative;
+	bottom:30px;
+	font-style:italic;
+	font-size:.78em;
+}
+#kid-pic{
+	width:100%;
+	height:auto;
+}
+#sponsorship:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d66611), color-stop(1, #e08c4c) );
+	background:-moz-linear-gradient( center top, #d66611 5%, #e08c3c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d66611', endColorstr='#e08c4c');
+	background-color:#e08c4c;
+}
+#sponsorship:active {
+	position:relative;
+	top:1px;
+}
+#sponsorship a{
+	color:white;
+	text-decoration:none;
+	cursor:auto;
+	position:relative;
+}
+
+.bu{
+	text-decoration:underline;
+	font-weight:bold;
+}
+.center{
+	text-align:center;
+}
+.bo{
+	font-weight:bold;
+}
+.mid{
+	margin:0 auto;
+}
+.t100{
+	width:100%;
+}
+.share {
+	width:75%;
+	height:75%;
+}
+</style>
+	</head>
+	<body>
+		<div id="outside">
+			<div id="right">
+				<div id="kid">
+					<div id="top">
+						<div id="box">
+							<div id="b1"></div>
+							<div id="b2"></div>
+							<div id="b3"></div>
+							<div id="b4"></div>
+							<div id="b5"></div>
+						</div>
+						<div id="white">HOPE HOUSE CHILDREN'S HOME</div>
+						<div id="logo"><img src="http://rifaso.com/pfa/pfa_black.jpg" id="logo-img"></div>
+					</div>
+					<div id="middle">
+					<p id="Jer">"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future." Jer 29:11</p>
+					</div>
+					<div id="kid-bottom">
+						<div id="inside-left">
+							<img src="<%=@child.picture %>" id="kid-pic">
+						</div>
+						<div id="inside-right">	
+							<h3 class="bu"><%= @child.name  %></h3>
+							<p class="bo"><%= @child.age %> years old - <%= @child.grade %></p>
+							<p class="bo"><%= @child.tribe %> Tribe </p>
+							<p> <%=@child.about %></p>
+							<div id="sponsorship">
+							<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=<%=@child.fullcode%>"> Full Sponsorship
+$100 </a></div>
+							<p></p>
+							<div id="sponsorship">						 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=<%=@child.livingcode%>">	Only Living Sponsorship $60</a>
+							</div>
+							<p></p>
+							<div id="sponsorship"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=<%=@child.schoolingcode%>">Only	Schooling Sponsorship $40</a>
+							</div>
+							<p></p>
+							<div class="t100">
+								<table class="mid">
+									<tr>
+										<td><a href="mailto:pfasia98@gmail.com"><img src="http://www.rifaso.com/pfa/Email.png" class="share"></a></td>
+										<td><a href="http://www.facebook.com/pfahopehouse"><img src="http://www.rifaso.com/pfa/Facebook.png" class="share"></a></td>
+										<td><a href="http://www.instagram.com/pfasia98"><img src="http://www.rifaso.com/pfa/Instagram.png" class="share"></a></td>
+										<td><a href="http://twitter.com/pfasia98"><img src="http://www.rifaso.com/pfa/Twitter.png" class="share"></a></td>
+										<td><a href="http://www.pinterest.com/pfasia98"><img src="http://www.rifaso.com/pfa/Pinterest.png" class="share"></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="details">
+					<div id="bottom">
+						<div id="inside">
+							<p><span class="bu ">Living sponsorship:</span> Living sponsorship helps fund child's daily needs (lodging, food, clothes, house parents, etc).</p>
+							<p><span class="bu ">Schooling sponsorship:</span> Schooling sponsorship helps fund a child's education needs (books, uniforms, teachers, field trips, etc).</p>
+							<p><span class="bu ">Full Sponsorship:</span> Full Sponsorship helps fund child's daily and educational needs.</p>
+
+							<h3 class="bu center">Ways to Donate:</h3>
+							<p><span class="bo">Paypal:</span> Go to <a href="http://www.projectsforasia.com">www.projectsforasia.com</a> and find <a href="http://www.projectsforasia.com/hhsponsorship">"Sponsor a Child"</a><br />a. Select the child you would like to sponsor <br /> b. Set up your payment profile<br /> c. Payments will be automatically deducted from your account monthly </p>
+							<p><span class="bo"> Check:</span> Please send checks to the following address <br /><span class="bo">Projects For Asia Charitable Foundation, Inc.</span><br />100 Old Ward Street <br />Hingham, MA 02043 <br /><span class="bo">Attn:  Childs name and number</span></p>
+							<p>Please feel free to direct questions to <a href="mailto:pfasia98@gmail.com"> pfasia98@gmail.com</a> concerning your child. You will recieve updates via email.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
