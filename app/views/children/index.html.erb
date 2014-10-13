@@ -1,6 +1,49 @@
 <h1>Children Index</h1>
-<ul>
+<table>
 	<% @children.each do |child| %>
-	<li><%= link_to child.name, child %> </li>
+		<tr>
+			<td>
+				<%= link_to child.name, child %>
+			</td>
+			<td>
+				<%= child.age %>
+			</td>
+			<td>
+				<%= child.grade %>
+			</td>
+			<td>
+				<%= child.tribe %>
+			</td>
+			<td>
+				<%= child.about %>
+			</td>
+			<td>
+				<%= child.picture %>
+			</td>
+			<td>
+				<%= child.full %>
+			</td>
+			<td>
+				<%= child.fullcode %>
+			</td>
+			<td>
+				<%= child.living %>
+			</td>
+			<td>
+				<%= child.livingcode %>
+			</td>
+			<td>
+				<%= child.schooling %>
+			</td>
+			<td>
+				<%= child.schoolingcode %>
+			</td>
+		</tr>
 	<% end %>
-</ul>
+</table>
+
+<h2>Import Children</h2>
+<%= form_tag import_children_path, multipart: true do %>
+	<%= file_field_tag :file %>
+	<%= submit_tag "Import" %>
+<% end %>
